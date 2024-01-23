@@ -11,6 +11,8 @@
 		024BC45A2B5EAB7E0098872D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BC4592B5EAB7E0098872D /* ContentView.swift */; };
 		024BC45C2B5EAB800098872D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024BC45B2B5EAB800098872D /* Assets.xcassets */; };
 		024BC45F2B5EAB800098872D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024BC45E2B5EAB800098872D /* Preview Assets.xcassets */; };
+		024BC4672B5EAFB60098872D /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BC4662B5EAFB60098872D /* ListItemView.swift */; };
+		024BC46B2B5EB1330098872D /* ShoheiOhtaniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024BC46A2B5EB1330098872D /* ShoheiOhtaniView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		024BC4592B5EAB7E0098872D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		024BC45B2B5EAB800098872D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		024BC45E2B5EAB800098872D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		024BC4662B5EAFB60098872D /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		024BC46A2B5EB1330098872D /* ShoheiOhtaniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoheiOhtaniView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				024BC4572B5EAB7E0098872D /* TraidingCardsv2App.swift */,
 				024BC4592B5EAB7E0098872D /* ContentView.swift */,
+				024BC4652B5EAEBA0098872D /* Helpers */,
+				024BC4692B5EB0190098872D /* New Group */,
 				024BC45B2B5EAB800098872D /* Assets.xcassets */,
 				024BC45D2B5EAB800098872D /* Preview Content */,
 			);
@@ -65,6 +71,22 @@
 				024BC45E2B5EAB800098872D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		024BC4652B5EAEBA0098872D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				024BC4662B5EAFB60098872D /* ListItemView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		024BC4692B5EB0190098872D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				024BC46A2B5EB1330098872D /* ShoheiOhtaniView.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				024BC4672B5EAFB60098872D /* ListItemView.swift in Sources */,
 				024BC45A2B5EAB7E0098872D /* ContentView.swift in Sources */,
 				024BC4582B5EAB7E0098872D /* TraidingCardsv2App.swift in Sources */,
+				024BC46B2B5EB1330098872D /* ShoheiOhtaniView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,13 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack(alignment: .leading) {
+
+                List {
+                    NavigationLink {
+                        ShoheiOhtaniView()
+                    } label: {
+                        ListItemView(
+                            playerName: "Shohei Ohtani",
+                            team: "Los Angeles Dodgers",
+                            photo: "ShoheiOhtaniFace"
+                        )
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 
