@@ -10,20 +10,22 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            VStack(alignment: .leading) {
-
+                
                 List {
                     NavigationLink {
                         ShoheiOhtaniView()
                     } label: {
                         ListItemView(
                             playerName: "Shohei Ohtani",
-                            team: "Los Angeles Dodgers",
-                            photo: "ShoheiOhtaniFace"
+                            team: "Los Angeles Angels",
+                            photo: "ShoheiOhtaniFace",
+                            award: "MVP"
+                            
                         )
                     }
+                    .listRowBackground(Color.darkPurple)
+                    .navigationTitle("MLB Awards 2023")
                 }
-            }
         }
     }
 }

@@ -13,7 +13,9 @@ struct ListItemView: View {
     let playerName: String
     let team: String
     let photo: String
+    let award: String
     
+    let gradientColors = Gradient(colors: [Color.blue, Color.purple, Color.yellow])
     // MARK: Computed properties
     var body: some View {
         HStack {
@@ -22,15 +24,24 @@ struct ListItemView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 75)
-                .padding(.trailing, 10)
                 .clipShape(Circle())
+                .padding(.trailing, 10)
+                
             
             VStack {
                 VStack(alignment: .leading) {
-                    Text(playerName)
-                        .font(.headline)
+                    HStack{
+                        Text(award)
+                            .font(.headline)
+                            .fontWeight(.bold)
+                            
+                        
+                        Text(playerName)
+                            .font(.headline)
+                    }
                     Text(team)
                 }
+                .foregroundStyle(.white)
             }
         }
     }
@@ -40,6 +51,8 @@ struct ListItemView: View {
     ListItemView(
         playerName: "Shohei Ohtani",
         team: "Los Angeles Dodgers",
-        photo: "ShoheiOhtaniFace"
+        photo: "ShoheiOhtaniFace",
+        award: "MVP"
+        
     )
 }
