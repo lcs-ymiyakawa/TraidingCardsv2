@@ -13,7 +13,7 @@ struct ContentView: View {
                 
                 List {
                     NavigationLink {
-                        ShoheiOhtaniView()
+                        //CardView
                     } label: {
                         ListItemView(
                             playerName: "Shohei Ohtani",
