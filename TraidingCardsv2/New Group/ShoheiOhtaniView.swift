@@ -73,7 +73,7 @@ struct CardView: View {
                     }
                     .padding()
                     VStack(alignment: .leading) {
-                        Text("Most famous play")
+                        Text("Biggest Accomplishment")
                             .bold()
                             .foregroundStyle(.white)
                             .padding()
@@ -97,6 +97,6 @@ struct CardView: View {
     battingAvrg: ".304",
     OPS: "1.066",
     teamLogo: "LAA",
-    mostFamousPlay: " It happened in the end of the World Baseball Classic. With two outs in the bottom of the ninth in a one-run game, Ohtani worked his then-Angels teammate Mike Trout to a full count before striking him out on a sweeper to seal Team Japan's championship."
+    mostFamousPlay: "Ohtani became the only player in MLB history with 10+ pitching wins and 30+ home runs in the same season. Became the first player ever to qualify for the league leaders as both a hitter and a pitcher in the same season."
     )
 }

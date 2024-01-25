@@ -20,7 +20,7 @@ struct ContentView: View {
                                  battingAvrg: ".304",
                                  OPS: "1.066",
                                  teamLogo: "LAA",
-                                 mostFamousPlay: " It happened in the end of the World Baseball Classic. With two outs in the bottom of the ninth in a one-run game, Ohtani worked his then-Angels teammate Mike Trout to a full count before striking him out on a sweeper to seal Team Japan's championship.")
+                                 mostFamousPlay: "Ohtani became the only player in MLB history with 10+ pitching wins and 30+ home runs in the same season. Became the first player ever to qualify for the league leaders as both a hitter and a pitcher in the same season.")
                     } label: {
                         ListItemView(
                             playerName: "Shohei Ohtani",
@@ -45,6 +45,21 @@ struct ContentView: View {
                     .listRowBackground(Color.darkPurple)
                     .navigationTitle("MLB Awards 2023")
                     
+                    NavigationLink {
+                        CardView(playerName: "Gunnar Henderson", photo: "GunnarHenderson", HR: "28", battingAvrg: ".255", OPS: ".814", teamLogo: "BaltimoreOrioles", mostFamousPlay: "Henderson opened a game at Yankee Stadium with his first career leadoff home run, and  he also belted a three-run blast in the fourth for his first multihomer game.")
+                    } label: {
+                        ListItemView(playerName: "Gunnar Henderson", team: "Baltimore Orioles", photo: "GunnarHendersonFace", award: "Rookie of the Year")
+                    }
+                    .listRowBackground(Color.darkPurple)
+                    .navigationTitle("MLB Awards 2023")
+                    
+                    NavigationLink {
+                        CardView(playerName: "Corbin Carroll", photo: "CorbinCarroll", HR: "25", battingAvrg: ".285", OPS: ".868", teamLogo: "ArizonaDiamondbacks", mostFamousPlay: "Carroll became the first rookie in major league history to record 25 home runs and 50 stolen bases in one season. He was also voted by fans to be in the All Star game")
+                    } label: {
+                        ListItemView(playerName: "Corbin Carroll", team: "Arizona Diamondbacks", photo: "CorbinCarrollFace", award: "Rookie of the Year")
+                    }
+                    .listRowBackground(Color.darkPurple)
+                    .navigationTitle("MLB Awards 2023")
                     
                 }
         }
