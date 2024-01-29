@@ -18,7 +18,7 @@ struct PlayerListView: View {
                 }, label: {
                     ListItemView(player: currentPlayer)
                 })
-                .listRowBackground(Color.gray)
+                .listRowBackground(Color.darkPurple)
             }
             .navigationTitle("MLB Awards 2023")
         }
