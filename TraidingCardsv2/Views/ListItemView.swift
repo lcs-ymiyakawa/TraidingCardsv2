@@ -10,17 +10,16 @@ import SwiftUI
 struct ListItemView: View {
     
     // MARK: Stored properties
-    let playerName: String
-    let team: String
-    let photo: String
-    let award: String
+    let player: TradingCard
     
     let gradientColors = Gradient(colors: [Color.blue, Color.purple, Color.yellow])
+    
+    
     // MARK: Computed properties
     var body: some View {
         HStack {
             
-            Image(photo)
+            Image(player.facePhoto)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 75)
@@ -31,15 +30,15 @@ struct ListItemView: View {
             VStack {
                 VStack(alignment: .leading) {
                     HStack{
-                        Text(award)
+                        Text(player.award)
                             .font(.headline)
                             .fontWeight(.bold)
                             
                         
-                        Text(playerName)
+                        Text(player.playerName)
                             .font(.headline)
                     }
-                    Text(team)
+                    Text(player.team)
                 }
                 .foregroundStyle(.white)
             }
@@ -47,31 +46,6 @@ struct ListItemView: View {
     }
 }
 
-let ShoheiOhtaniList = ListItemView(
-        playerName: "Shohei Ohtani",
-        team: "Los Angeles Dodgers",
-        photo: "ShoheiOhtaniFace",
-        award: "MVP"
-        
-    )
-
-let RonaldAcuñaJrList = ListItemView(
-    playerName: "Ronald Acuña Jr.",
-    team: "Atlanta Braves",
-    photo: "RonaldAcuFace",
-    award: "MVP"
-)
-
-let GunnarHendersonList = ListItemView(
-    playerName: "Gunnar Henderson",
-    team: "Baltimore Orioles",
-    photo: "GunnarHendersonFace",
-    award: "Rookie of the Year"
-)
-
-let CorbinCarrollList = ListItemView(
-    playerName: "Corbin Carroll",
-    team: "Arizona Diamondbacks",
-    photo: "CorbinCarrollFace",
-    award: "Rookie of the Year"
-)
+#Preview {
+    ListItemView(player: shoheiOhtaniCard)
+}
