@@ -47,12 +47,31 @@ struct ListItemView: View {
     }
 }
 
-#Preview {
-    ListItemView(
+let ShoheiOhtaniList = ListItemView(
         playerName: "Shohei Ohtani",
         team: "Los Angeles Dodgers",
         photo: "ShoheiOhtaniFace",
         award: "MVP"
         
     )
-}
+
+let RonaldAcuñaJrList = ListItemView(
+    playerName: "Ronald Acuña Jr.",
+    team: "Atlanta Braves",
+    photo: "RonaldAcuFace",
+    award: "MVP"
+)
+
+let GunnarHendersonList = ListItemView(
+    playerName: "Gunnar Henderson",
+    team: "Baltimore Orioles",
+    photo: "GunnarHendersonFace",
+    award: "Rookie of the Year"
+)
+
+let CorbinCarrollList = ListItemView(
+    playerName: "Corbin Carroll",
+    team: "Arizona Diamondbacks",
+    photo: "CorbinCarrollFace",
+    award: "Rookie of the Year"
+)
